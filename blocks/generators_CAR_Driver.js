@@ -7,8 +7,10 @@ Blockly.JavaScript['CAR_Driver_begin'] = function (block) {
 		WIRE_OBJ = 'Wire1';
 		SDA_PIN = 4;
 		SCL_PIN = 5;
-	} else if (board_name == 'ipst-wifi') {
-
+	} else if (board_name == 'kb32-ft') {
+		WIRE_OBJ = 'Wire1';
+		SDA_PIN = 4;
+		SCL_PIN = 5;
 	}
 
 	var code = '';
