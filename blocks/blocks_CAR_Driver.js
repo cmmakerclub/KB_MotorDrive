@@ -34,7 +34,7 @@ Blockly.Blocks['car_con_motor'] = {
 	init: function() {
 	  this.appendDummyInput()
 			.appendField("DC Motor(str) add")
-			.appendField(new Blockly.FieldDropdown([["0x3F","0x3F"], ["0x3E","0x3E"]]), "address");
+			.appendField(new Blockly.FieldDropdown([["0x3E","0x3E"], ["0x3F","0x3F"]]), "address");
 	  this.appendValueInput("L")
 		  .setCheck("")
 		  .appendField("L");
