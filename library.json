@@ -9,7 +9,7 @@
   "git": "https://github.com/cmmakerclub/KB_MotorDrive/",
   "author": "TONG_CMMC",
   "url": "https://www.aiiotshop.com/",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "board" : "",
   "platform": ["arduino-avr","arduino-esp32"],
   "image" : "/static/display.png"
