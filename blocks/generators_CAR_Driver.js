@@ -18,8 +18,16 @@ Blockly.JavaScript['CAR_Driver_begin'] = function (block) {
 	code += `
 	#EXTINC#include <Wire.h>#END
 	#VARIABLE
-	void motor(int addd=0x3F,byte L = 0, byte R = 0)
+	void motor(int addd=0x3F,int L = 0, int R = 0)
 	{
+	  if(L > 127)
+	  	L=127;
+	  if(L < -127)
+	  	L=-127;
+	  if(R > 127)
+	  	R=127;
+	  if(R < -127)
+	  	R=-127;
 	  ${WIRE_OBJ}.beginTransmission(addd); 
 	  ${WIRE_OBJ}.write(L);        
 	  ${WIRE_OBJ}.write(R);              
